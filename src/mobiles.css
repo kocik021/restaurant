@@ -1,0 +1,1125 @@
+@import url("https://fonts.googleapis.com/css?family=BenchNine|Great+Vibes&display=swap");
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+div.App {
+  background-color: #111111;
+}
+/* NOTEBOOKS AND SMALL LAPTOPS */
+
+/* HEADER STYLES */
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/restaurant-gallery.jpg);
+  background-size: cover;
+  color: #ffeaca;
+  font-family: "BenchNine", sans-serif;
+}
+
+.wrap-header {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav.menu {
+  animation: showAbout 3s;
+}
+
+nav.menu ul {
+  margin: 0;
+  display: flex;
+  padding: 20px;
+}
+button.hide,
+.show {
+  display: none;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #ffeaca;
+  font-size: 22px;
+}
+
+.burger-menu-hide {
+  opacity: 0;
+  top: -100vh;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+ul.burger-menu {
+  width: 60%;
+  background-color: #01010d;
+  border: 2px solid #ffeaca;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  transition: 0.3s;
+}
+
+ul.burger-menu a {
+  margin: 10px;
+}
+
+ul.burger-menu-hide {
+  display: none;
+}
+header a {
+  list-style: none;
+  padding: 20px;
+  height: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  font-weight: bold;
+  border-bottom: 2px solid #ffeaca;
+}
+
+.back {
+  position: fixed;
+  top: 90vh;
+  right: 2vw;
+  height: 10px;
+  width: 10px;
+  text-align: center;
+}
+
+a.back:hover {
+  border: 0px solid black;
+}
+
+@keyframes h1move {
+  0% {
+    top: 50vh;
+    right: 5vw;
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    top: 40vh;
+    right: 10vw;
+    opacity: 1;
+  }
+}
+
+header h1 {
+  position: absolute;
+  top: 40vh;
+  right: 10vw;
+  font-family: "Great Vibes", cursive;
+  font-size: 100px;
+  animation: h1move 2s;
+}
+
+.dish-name,
+.soup-name,
+.dessert-name {
+  font-size: 28px;
+}
+
+ul.menu-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+ul.menu-list a {
+  opacity: 0;
+}
+
+ul.menu-list:hover {
+  font-weight: bold;
+}
+
+ul.menu-list:hover a {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* ABOUT STYLES */
+
+.about-img {
+  height: 50vh;
+  width: 40vw;
+  margin: auto;
+  animation: showAbout 2s;
+  border: 1px solid #ffeaca;
+}
+
+div.about-wrap {
+  height: 50vh;
+  width: 40vw;
+  margin: auto;
+  font-size: 32px;
+  animation: showAbout 2s;
+}
+
+.about-us {
+  font-family: "Great Vibes", cursive;
+  font-size: 42px;
+}
+
+div.about {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #ffeaca;
+  height: 96vh;
+  width: 100%;
+  background-color: #01010d;
+  border-top: 1px solid #ffeaca;
+  border-bottom: 1px solid #ffeaca;
+  font-family: "BenchNine", sans-serif;
+}
+
+@keyframes showAbout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* MENU STYLES */
+
+.tag {
+  text-align: center;
+  color: #ffeaca;
+  font-family: "Great Vibes", cursive;
+  font-size: 42px;
+}
+
+img.food {
+  height: 30px;
+  width: 30px;
+  margin: 20px 50px;
+}
+
+div.soup,
+div.dish,
+div.dessert {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20vw;
+}
+
+.soups,
+.main-dishes,
+.desserts-courses {
+  color: #ffeaca;
+  background-color: #01010d;
+  padding: 50px 0;
+  border-top: 1px solid #ffeaca;
+  border-bottom: 1px solid #ffeaca;
+  font-family: "BenchNine", sans-serif;
+}
+
+.ingridients {
+  padding: 10px 50px;
+}
+
+.fa-cookie,
+.fa-fish,
+.fa-leaf,
+.fa-drumstick-bite {
+  font-size: 30px;
+  padding: 20px 100px;
+}
+
+/* CONTACT STYLES */
+
+.contact-wrapper {
+  height: 90vh;
+  background-color: #01010d;
+  padding: 50px 0;
+  border-top: 1px solid #ffeaca;
+  border-bottom: 1px solid #ffeaca;
+  color: #ffeaca;
+}
+
+.info-wrap {
+  padding: 100px 20px;
+  font-weight: bold;
+  font-family: "BenchNine", sans-serif;
+  font-size: 22px;
+}
+
+.adress,
+.adress2 {
+  font-weight: 200;
+}
+
+.info-list {
+  display: flex;
+  justify-content: center;
+}
+
+/* footer STYLES*/
+footer {
+  height: 20px;
+  width: 100%;
+  background-color: #000;
+  color: #444;
+  font-size: 10px;
+  line-height: 20px;
+}
+
+/* IPADS AND TABLETS */
+
+@media only screen and (max-width: 1023px) and (min-width: 501px) {
+  header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/restaurant-gallery.jpg);
+    background-size: cover;
+    color: #ffeaca;
+    font-family: "BenchNine", sans-serif;
+    text-align: center;
+  }
+
+  .wrap-header {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  nav.menu {
+    display: none;
+    animation: showAbout 3s;
+  }
+
+  nav.menu ul {
+    margin: 0;
+    display: flex;
+    padding: 5px 10px;
+  }
+  button.hide,
+  .show {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #ffeaca;
+    font-size: 22px;
+  }
+
+  .burger-menu-hide {
+    opacity: 0;
+    top: -100vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  ul.burger-menu {
+    width: 60%;
+    background-color: #01010d;
+    border: 2px solid #ffeaca;
+    position: absolute;
+    z-index: 21;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    transition: 0.3s;
+  }
+  header a {
+    list-style: none;
+    padding: 10px;
+    height: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  header a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid #ffeaca;
+  }
+
+  .back {
+    position: fixed;
+    top: 90vh;
+    right: 2vw;
+    height: 10px;
+    width: 10px;
+    text-align: center;
+  }
+
+  a.back:hover {
+    border: 0px solid black;
+  }
+
+  @keyframes h1move {
+    0% {
+      top: 50%;
+      right: 5vw;
+      opacity: 0;
+    }
+    30% {
+      opacity: 0;
+    }
+    100% {
+      top: 50vh;
+      right: 10vw;
+      opacity: 1;
+    }
+  }
+
+  header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px;
+    font-family: "Great Vibes", cursive;
+    font-size: 72px;
+    animation: h1move 2s;
+  }
+
+  .dish-name,
+  .soup-name,
+  .dessert-name {
+    font-size: 16px;
+  }
+
+  ul.menu-list {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  ul.menu-list a {
+    opacity: 0;
+  }
+
+  ul.menu-list:hover {
+    font-weight: bold;
+  }
+
+  ul.menu-list:hover a {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  /* ABOUT STYLES */
+
+  .about-img {
+    height: 40vh;
+    width: 80vw;
+    margin: 10px auto;
+
+    animation: showAbout 2s;
+    border: 1px solid #ffeaca;
+  }
+
+  div.about-wrap {
+    height: 50vh;
+    width: 80vw;
+    margin: auto;
+    font-size: 22px;
+    animation: showAbout 2s;
+  }
+
+  .about-us {
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+  }
+
+  div.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #ffeaca;
+    height: 96vh;
+    width: 100%;
+    background-color: #01010d;
+    border-top: 1px solid #ffeaca;
+    border-bottom: 1px solid #ffeaca;
+    font-family: "BenchNine", sans-serif;
+  }
+
+  @keyframes showAbout {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .tag {
+    text-align: center;
+    color: #ffeaca;
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+  }
+
+  img.food {
+    height: 10px;
+    width: 10px;
+    margin: 4px 10px;
+  }
+
+  div.soup,
+  div.dish,
+  div.dessert {
+    display: flex;
+    margin: 5px 20px;
+    font-size: 22px;
+  }
+
+  .soups,
+  .main-dishes,
+  .desserts-courses {
+    color: #ffeaca;
+    background-color: #01010d;
+    padding: 10px 0;
+    border-top: 1px solid #ffeaca;
+    border-bottom: 1px solid #ffeaca;
+    font-family: "BenchNine", sans-serif;
+  }
+
+  .ingridients {
+    font-size: 22px;
+    padding: 2px 10px;
+  }
+
+  .fa-cookie,
+  .fa-fish,
+  .fa-leaf,
+  .fa-drumstick-bite {
+    font-size: 22px;
+    padding: 22px 10px;
+  }
+  h2.soup-name,
+  .dish-name,
+  .dessert-name {
+    font-size: 22px;
+  }
+  .contact-wrapper {
+    height: 90vh;
+    background-color: #01010d;
+    padding: 50px 0;
+    border-top: 1px solid #ffeaca;
+    border-bottom: 1px solid #ffeaca;
+    color: #ffeaca;
+  }
+
+  .info-wrap {
+    padding: 10px 10px;
+    font-weight: bold;
+    font-family: "BenchNine", sans-serif;
+    font-size: 22px;
+  }
+
+  .adress,
+  .adress2 {
+    font-weight: 200;
+  }
+
+  .map {
+    height: 0vh;
+    width: 0vh;
+    background-color: wheat;
+  }
+
+  .info-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /*  FOOTER STYLES */
+
+  footer {
+    height: 20px;
+    width: 100%;
+    background-color: #000;
+    color: #444;
+    font-size: 4px;
+    line-height: 20px;
+  }
+}
+
+/*  MORE MOBILES  */
+
+@media only screen and (max-width: 500px) and (min-width: 401px) {
+  header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/restaurant-gallery.jpg);
+    background-size: cover;
+    color: #ffeaca;
+    font-family: "BenchNine", sans-serif;
+    text-align: center;
+  }
+
+  .wrap-header {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  nav.menu {
+    display: none;
+    animation: showAbout 3s;
+  }
+
+  nav.menu ul {
+    margin: 0;
+    display: flex;
+    padding: 5px 10px;
+  }
+  button.hide,
+  .show {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #ffeaca;
+    font-size: 22px;
+  }
+
+  .burger-menu-hide {
+    opacity: 0;
+    top: -100vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  ul.burger-menu {
+    width: 60%;
+    background-color: #01010d;
+    border: 2px solid #ffeaca;
+    position: absolute;
+    z-index: 21;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    transition: 0.3s;
+  }
+  header a {
+    list-style: none;
+    padding: 5px;
+    height: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  header a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid #ffeaca;
+  }
+
+  .back {
+    position: fixed;
+    top: 90vh;
+    right: 2vw;
+    height: 10px;
+    width: 10px;
+    text-align: center;
+  }
+
+  a.back:hover {
+    border: 0px solid black;
+  }
+
+  @keyframes h1move {
+    0% {
+      top: 50%;
+      right: 5vw;
+      opacity: 0;
+    }
+    30% {
+      opacity: 0;
+    }
+    100% {
+      top: 50vh;
+      right: 10vw;
+      opacity: 1;
+    }
+  }
+
+  header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px;
+    font-family: "Great Vibes", cursive;
+    font-size: 42px;
+    animation: h1move 2s;
+  }
+
+  .dish-name,
+  .soup-name,
+  .dessert-name {
+    font-size: 16px;
+  }
+
+  ul.menu-list {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  ul.menu-list a {
+    opacity: 0;
+  }
+
+  ul.menu-list:hover {
+    font-weight: bold;
+  }
+
+  ul.menu-list:hover a {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  /* ABOUT STYLES */
+
+  .about-img {
+    height: 40vh;
+    width: 80vw;
+    margin: 10px auto;
+
+    animation: showAbout 2s;
+    border: 1px solid #ffeaca;
+  }
+
+  div.about-wrap {
+    height: 50vh;
+    width: 80vw;
+    margin: auto;
+    font-size: 18px;
+    animation: showAbout 2s;
+  }
+
+  .about-us {
+    font-family: "Great Vibes", cursive;
+    font-size: 26px;
+  }
+
+  div.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #ffeaca;
+    height: 96vh;
+    width: 100%;
+    background-color: #01010d;
+    border-top: 1px solid #ffeaca;
+    border-bottom: 1px solid #ffeaca;
+    font-family: "BenchNine", sans-serif;
+  }
+
+  p.about-text {
+    font-size: 14px;
+  }
+
+  @keyframes showAbout {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .tag {
+    text-align: center;
+    color: #ffeaca;
+    font-family: "Great Vibes", cursive;
+    font-size: 26px;
+  }
+
+  img.food {
+    height: 5px;
+    width: 5px;
+    margin: 4px 10px;
+  }
+
+  div.soup,
+  div.dish,
+  div.dessert {
+    display: flex;
+    margin: 5px 20px;
+    font-size: 14px;
+  }
+
+  .soups,
+  .main-dishes,
+  .desserts-courses {
+    color: #ffeaca;
+    background-color: #01010d;
+    padding: 10px 0;
+    border-top: 1px solid #ffeaca;
+    border-bottom: 1px solid #ffeaca;
+    font-family: "BenchNine", sans-serif;
+  }
+
+  .ingridients {
+    font-size: 14px;
+    padding: 2px 10px;
+  }
+
+  .fa-cookie,
+  .fa-fish,
+  .fa-leaf,
+  .fa-drumstick-bite {
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+  h2.soup-name,
+  .dish-name,
+  .dessert-name {
+    font-size: 14px;
+  }
+  .contact-wrapper {
+    height: 90vh;
+    background-color: #01010d;
+    padding: 50px 0;
+    border-top: 1px solid #ffeaca;
+    border-bottom: 1px solid #ffeaca;
+    color: #ffeaca;
+  }
+
+  .info-wrap {
+    padding: 10px 10px;
+    font-weight: bold;
+    font-family: "BenchNine", sans-serif;
+    font-size: 16px;
+  }
+
+  .adress,
+  .adress2 {
+    font-weight: 200;
+  }
+
+  .map {
+    height: 0vh;
+    width: 0vh;
+    background-color: wheat;
+  }
+
+  .info-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /*  FOOTER STYLES */
+
+  footer {
+    height: 20px;
+    width: 100%;
+    background-color: #000;
+    color: #444;
+    font-size: 4px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/restaurant-gallery.jpg);
+    background-size: cover;
+    color: #ffeaca;
+    font-family: "BenchNine", sans-serif;
+    text-align: center;
+  }
+
+  .wrap-header {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  nav.menu {
+    display: none;
+    animation: showAbout 3s;
+  }
+
+  nav ul {
+    margin: 0;
+    display: flex;
+    padding: 5px 10px;
+  }
+  button.hide,
+  .show {
+    display: block;
+  }
+  header a {
+    list-style: none;
+    padding: 5px;
+    height: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  header a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid #ffeaca;
+  }
+
+  .back {
+    position: fixed;
+    top: 90vh;
+    right: 2vw;
+    height: 10px;
+    width: 10px;
+    text-align: center;
+  }
+
+  a.back:hover {
+    border: 0px solid black;
+  }
+
+  @keyframes h1move {
+    0% {
+      top: 50vh;
+      right: 5vw;
+      opacity: 0;
+    }
+    30% {
+      opacity: 0;
+    }
+    100% {
+      top: 40vh;
+      right: 10vw;
+      opacity: 1;
+    }
+  }
+
+  header h1 {
+    position: absolute;
+    top: 40vh;
+    right: 10vw;
+    font-family: "Great Vibes", cursive;
+    font-size: 32px;
+
+    animation: h1move 2s;
+  }
+
+  .dish-name,
+  .soup-name,
+  .dessert-name {
+    font-size: 16px;
+  }
+
+  ul.menu-list {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  ul.menu-list a {
+    opacity: 0;
+  }
+
+  ul.menu-list:hover {
+    font-weight: bold;
+  }
+
+  ul.menu-list:hover a {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  /* ABOUT STYLES */
+
+  .about-img {
+    height: 40vh;
+    width: 80vw;
+    margin: 10px auto;
+
+    animation: showAbout 2s;
+    border: 1px solid #ffeaca;
+  }
+
+  div.about-wrap {
+    height: 50vh;
+    width: 80vw;
+    margin: auto;
+    font-size: 12px;
+    animation: showAbout 2s;
+  }
+
+  .about-us {
+    font-family: "Great Vibes", cursive;
+    font-size: 16px;
+  }
+
+  div.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #ffeaca;
+    height: 96vh;
+    width: 100%;
+    background-color: #01010d;
+    border-top: 1px solid #ffeaca;
+    border-bottom: 1px solid #ffeaca;
+    font-family: "BenchNine", sans-serif;
+  }
+
+  @keyframes showAbout {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .tag {
+    text-align: center;
+    color: #ffeaca;
+    font-family: "Great Vibes", cursive;
+    font-size: 16px;
+  }
+
+  img.food {
+    height: 5px;
+    width: 5px;
+    margin: 4px 10px;
+  }
+
+  div.soup,
+  div.dish,
+  div.dessert {
+    display: flex;
+    margin: 5px 20px;
+    font-size: 10px;
+  }
+
+  .soups,
+  .main-dishes,
+  .desserts-courses {
+    color: #ffeaca;
+    background-color: #01010d;
+    padding: 10px 0;
+    border-top: 1px solid #ffeaca;
+    border-bottom: 1px solid #ffeaca;
+    font-family: "BenchNine", sans-serif;
+  }
+
+  .ingridients {
+    font-size: 10px;
+    padding: 2px 10px;
+  }
+
+  .fa-cookie,
+  .fa-fish,
+  .fa-leaf,
+  .fa-drumstick-bite {
+    font-size: 10px;
+    padding: 10px 10px;
+  }
+  h2.soup-name,
+  .dish-name,
+  .dessert-name {
+    font-size: 10px;
+  }
+  .contact-wrapper {
+    height: 90vh;
+    background-color: #01010d;
+    padding: 50px 0;
+    border-top: 1px solid #ffeaca;
+    border-bottom: 1px solid #ffeaca;
+    color: #ffeaca;
+  }
+
+  .info-wrap {
+    padding: 10px 10px;
+    font-weight: bold;
+    font-family: "BenchNine", sans-serif;
+    font-size: 12px;
+  }
+
+  .adress,
+  .adress2 {
+    font-weight: 200;
+  }
+
+  .map {
+    height: 0vh;
+    width: 0vh;
+    background-color: wheat;
+  }
+
+  .info-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /*  FOOTER STYLES */
+
+  footer {
+    height: 20px;
+    width: 100%;
+    background-color: #000;
+    color: #444;
+    font-size: 4px;
+    line-height: 20px;
+  }
+}

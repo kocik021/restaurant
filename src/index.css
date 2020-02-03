@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=BenchNine|Great+Vibes&display=swap");
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+div.App {
+  background-color: #111111;
+}
+
+/* HEADER STYLES */
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/restaurant-gallery.jpg);
+  background-size: cover;
+  color: #ffeaca;
+  font-family: "BenchNine", sans-serif;
+}
+
+.wrap-header {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav.menu {
+  animation: showAbout 3s;
+}
+
+nav.menu ul {
+  margin: 0;
+  display: flex;
+  padding: 20px 100px;
+}
+
+button.hide,
+.show {
+  display: none;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #ffeaca;
+  font-size: 22px;
+}
+
+.burger-menu-hide {
+  opacity: 0;
+  top: -100vh;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+ul.burger-menu {
+  width: 60%;
+  background-color: #01010d;
+  border: 2px solid #ffeaca;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  transition: 0.3s;
+}
+
+header a {
+  list-style: none;
+  padding: 20px;
+  height: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  font-weight: bold;
+  border-bottom: 2px solid #ffeaca;
+}
+
+.back {
+  position: fixed;
+  top: 90vh;
+  right: 2vw;
+  height: 10px;
+  width: 10px;
+  text-align: center;
+}
+
+a.back:hover {
+  border: 0px solid black;
+}
+
+@keyframes h1move {
+  0% {
+    top: 50vh;
+    right: 5vw;
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    top: 40vh;
+    right: 10vw;
+    opacity: 1;
+  }
+}
+
+header h1 {
+  position: absolute;
+  top: 40vh;
+  right: 10vw;
+  font-family: "Great Vibes", cursive;
+  font-size: 100px;
+  animation: h1move 2s;
+}
+
+.dish-name,
+.soup-name,
+.dessert-name {
+  font-size: 28px;
+}
+
+ul.menu-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+ul.menu-list a {
+  opacity: 0;
+}
+
+ul.menu-list:hover {
+  font-weight: bold;
+}
+
+ul.menu-list:hover a {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* ABOUT STYLES */
+
+.about-img {
+  height: 50vh;
+  width: 40vw;
+  margin: auto;
+  animation: showAbout 2s;
+  border: 1px solid #ffeaca;
+}
+
+div.about-wrap {
+  height: 50vh;
+  width: 40vw;
+  margin: auto;
+  font-size: 32px;
+  animation: showAbout 2s;
+}
+
+.about-us {
+  font-family: "Great Vibes", cursive;
+  font-size: 42px;
+}
+
+div.about {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  color: #ffeaca;
+  height: 96vh;
+  width: 100%;
+  background-color: #01010d;
+  border-top: 1px solid #ffeaca;
+  border-bottom: 1px solid #ffeaca;
+  font-family: "BenchNine", sans-serif;
+}
+
+@keyframes showAbout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* MENU STYLES */
+
+.tag {
+  text-align: center;
+  color: #ffeaca;
+  font-family: "Great Vibes", cursive;
+  font-size: 42px;
+}
+
+img.food {
+  height: 30px;
+  width: 30px;
+  margin: 20px 50px;
+}
+
+div.soup,
+div.dish,
+div.dessert {
+  display: flex;
+  margin: 10px 20vw;
+}
+
+.soups,
+.main-dishes,
+.desserts-courses {
+  color: #ffeaca;
+  background-color: #01010d;
+  padding: 50px 0;
+  border-top: 1px solid #ffeaca;
+  border-bottom: 1px solid #ffeaca;
+  font-family: "BenchNine", sans-serif;
+}
+
+.ingridients {
+  padding: 10px 50px;
+}
+
+.fa-cookie,
+.fa-fish,
+.fa-leaf,
+.fa-drumstick-bite {
+  font-size: 30px;
+  padding: 20px 100px;
+}
+
+/* CONTACT STYLES */
+
+.contact-wrapper {
+  height: 90vh;
+  background-color: #01010d;
+  padding: 50px 0;
+  border-top: 1px solid #ffeaca;
+  border-bottom: 1px solid #ffeaca;
+  color: #ffeaca;
+}
+
+.info-wrap {
+  padding: 100px 100px;
+  font-weight: bold;
+  font-family: "BenchNine", sans-serif;
+  font-size: 22px;
+}
+
+.adress,
+.adress2 {
+  font-weight: 200;
+}
+
+.map {
+  height: 80vh;
+  width: 80vh;
+  background-color: wheat;
+}
+
+.info-list {
+  display: flex;
+  justify-content: center;
+}
+
+/*  FOOTER STYLES */
+
+footer {
+  height: 20px;
+  width: 100%;
+  background-color: #000;
+  color: #444;
+  font-size: 10px;
+  line-height: 20px;
+}
